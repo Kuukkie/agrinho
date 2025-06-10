@@ -1,136 +1,167 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Festejando a Conexão: Cidade e Campo</title>
+    <title>Festejando a Conexão: Campo e Cidade em Harmonia</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-
-    <header>
+    <header class="main-header">
         <div class="container">
-            <h1>Festejando a Conexão</h1>
-            <p>Cidade e Campo em Harmonia</p>
+            <h1 class="site-title">
+                <a href="#hero">Festejando a Conexão</a>
+            </h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#impacto">Nosso Impacto</a></li>
+                    <li><a href="#eventos">Eventos</a></li>
+                    
+                    
+                </ul>
+            </nav>
+            <button class="nav-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#beneficios">Benefícios</a></li>
-                <li><a href="#eventos">Eventos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </div>
-    </nav>
-
     <main>
-        <section id="inicio" class="hero">
+        <section id="hero" class="hero-section">
             <div class="hero-content">
-                <h2>Unindo Raízes, Celebrando o Futuro</h2>
-                <p>Descubra a riqueza da interdependência entre o urbano e o rural.</p>
-                <a href="#sobre" class="btn">Saiba Mais</a>
+                <h2>Um Laço que Nutre e Inspira: Campo e Cidade em Sinergia</h2>
+                <p>Descubra como a interdependência entre o ambiente rural e o urbano enriquece nossas vidas, celebrando a troca de saberes, produtos e culturas que fortalecem nossa comunidade.</p>
+                <a href="#eventos" class="btn btn-primary">Participe dos Nossos Eventos</a>
             </div>
+            <div class="hero-image-overlay"></div>
+            <img src="images/hero-banner.jpg" alt="Campo e cidade se conectando" class="hero-background-image">
         </section>
 
-        <section id="sobre" class="section-content">
+        <section id="sobre" class="content-section about-section">
             <div class="container">
-                <h2>Sobre a Conexão</h2>
-                <p>Este site é um convite para explorar e valorizar a profunda relação entre a cidade e o campo. Longe de serem entidades separadas, elas coexistem e se nutrem mutuamente. A cidade depende do campo para seus recursos essenciais – alimentos, água, energia, matérias-primas – enquanto o campo encontra na cidade mercados, tecnologia e acesso a serviços.</p>
-                <p>Nosso objetivo é destacar essa simbiose, promover a compreensão mútua e incentivar iniciativas que fortalecem esses laços vitais para um desenvolvimento equilibrado e sustentável.</p>
-                <div class="image-gallery">
-                    <img src="espaco-rural-brasileiro.jpg" alt="Paisagem Rural">
-                    <img src="times-square-nova-york-megacidades-centros-urbanos-com-mais-de-10-milhoes-de-habitantes-1349698446082_615x300.jpg" alt="Centro Urbano">
-                </div>
-            </div>
-        </section>
-
-        <section id="beneficios" class="section-content alternate-bg">
-            <div class="container">
-                <h2>Benefícios dessa União</h2>
-                <div class="benefits-grid">
-                    <div class="benefit-item">
-                        <h3><i class="icon-leaf"></i> Sustentabilidade</h3>
-                        <p>A parceria promove práticas agrícolas e urbanas mais verdes, garantindo um futuro saudável para todos.</p>
+                <h2>A Essência da Nossa Celebração</h2>
+                <p class="section-description">Nós acreditamos que a união entre o campo e a cidade é a chave para um futuro mais próspero e sustentável. Esta plataforma é dedicada a valorizar essa relação vital, destacando seus benefícios e promovendo iniciativas que aproximam esses dois mundos.</p>
+                <div class="about-grid">
+                    <div class="about-item">
+                        <img src="aaa.jpg" alt="Ícone Nutrição">
+                        <h3>Nutrição e Abastecimento</h3>
+                        <p>O campo fornece alimentos frescos e matéria-prima, enquanto a cidade impulsiona a distribuição e o consumo consciente.</p>
                     </div>
-                    <div class="benefit-item">
-                        <h3><i class="icon-food"></i> Segurança Alimentar</h3>
-                        <p>O campo produz; a cidade consome. Uma conexão forte garante alimentos frescos e de qualidade nas mesas urbanas.</p>
+                    <div class="about-item">
+                        <img src="1231.jpg" alt="Ícone Cultura">
+                        <h3>Riqueza Cultural</h3>
+                        <p>A troca de tradições, festas populares e saberes artesanais enriquece ambos os ambientes, preservando nossa identidade.</p>
                     </div>
-                    <div class="benefit-item">
-                        <h3><i class="icon-money"></i> Economia Forte</h3>
-                        <p>O intercâmbio de produtos, serviços e inovações impulsiona o desenvolvimento econômico de ambas as esferas.</p>
-                    </div>
-                    <div class="benefit-item">
-                        <h3><i class="icon-culture"></i> Intercâmbio Cultural</h3>
-                        <p>A troca de conhecimentos, tradições e modos de vida enriquece a sociedade como um todo.</p>
+                    <div class="about-item">
+                        <img src="4341966.png" alt="Ícone Inovação">
+                        <h3>Inovação e Crescimento</h3>
+                        <p>A tecnologia e a infraestrutura urbana chegam ao campo, otimizando processos e gerando novas oportunidades para todos.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="eventos" class="section-content">
+        <section id="impacto" class="content-section impact-section bg-light">
             <div class="container">
-                <h2>Eventos e Iniciativas</h2>
-                <p>Confira alguns dos eventos que celebram a conexão entre cidade e campo:</p>
-                <div class="event-cards">
-                    <div class="card">
-                        <h3>Feira do Produtor Rural</h3>
-                        <p>Uma oportunidade para comprar produtos frescos diretamente do campo e conhecer os produtores locais.</p>
-                        <span class="date">Próxima edição: 15 de Julho</span>
+                <h2>Nosso Impacto na Comunidade</h2>
+                <p class="section-description">Desde o lançamento de nossa iniciativa, temos promovido diversas ações que fortalecem a conexão e geram benefícios tangíveis:</p>
+                <div class="impact-cards">
+                    <div class="impact-card">
+                        <img src="paisagem-prado-ensolarado_1112-134.jpg" alt="Campo vibrante">
+                        <h3>Do Campo para a Cidade</h3>
+                        <p>Apoiamos pequenos produtores rurais, facilitando o escoamento de seus produtos diretamente para os centros urbanos, garantindo preços justos e alimentos de qualidade.</p>
                     </div>
-                    <div class="card">
-                        <h3>Workshop de Horta Urbana</h3>
-                        <p>Aprenda a cultivar seus próprios alimentos mesmo em espaços pequenos na cidade.</p>
-                        <span class="date">Inscrições abertas!</span>
-                    </div>
-                    <div class="card">
-                        <h3>Festival Gastronômico da Roça</h3>
-                        <p>Experimente pratos típicos e inovadores que unem sabores do campo e da cidade.</p>
-                        <span class="date">Agosto (datas a confirmar)</span>
+                    <div class="impact-card">
+                        <img src="times-square-nova-york-megacidades-centros-urbanos-com-mais-de-10-milhoes-de-habitantes-1349698446082_615x300.jpg" alt="Cidade moderna">
+                        <h3>Da Cidade para o Campo</h3>
+                        <p>Conectamos profissionais urbanos e voluntários a projetos de desenvolvimento rural, levando conhecimento técnico, infraestrutura e novas tecnologias para comunidades rurais.</p>
                     </div>
                 </div>
-                <p class="call-to-action">Tem um evento para divulgar? <a href="#contato">Fale conosco!</a></p>
             </div>
         </section>
 
-        <section id="contato" class="section-content alternate-bg">
+        <section id="eventos" class="content-section events-section">
             <div class="container">
-                <h2>Entre em Contato</h2>
-                <p>Quer saber mais, compartilhar uma história ou propor uma parceria? Envie-nos uma mensagem!</p>
-                <form class="contact-form">
+                <h2>Participe dos Nossos Próximos Eventos</h2>
+                <p class="section-description">Confira nossa agenda e não perca a oportunidade de celebrar essa conexão!</p>
+                <div class="event-grid">
+                    <article class="event-card">
+                        <img src="feira.jpg" alt="Feira de Orgânicos">
+                        <h3>Feira de Produtos Orgânicos</h3>
+                        <p class="event-date">15 de Julho de 2025 | Praça Central</p>
+                        <p>Encontro mensal com produtores locais. Sabores autênticos e sustentabilidade direto do campo.</p>
+                        <a href="#" class="btn btn-secondary">Saiba Mais</a>
+                    </article>
+                    <article class="event-card">
+                        <img src="festival.webp" alt="Festival Cultural">
+                        <h3>Festival de Culturas Rurais</h3>
+                        <p class="event-date">10 a 12 de Agosto de 2025 | Parque Municipal</p>
+                        <p>Música, dança, gastronomia e artesanato que celebram as tradições do campo brasileiro.</p>
+                        <a href="#" class="btn btn-secondary">Saiba Mais</a>
+                    </article>
+                    <article class="event-card">
+                        <img src="horta.webp" alt="Workshop Hortas Urbanas">
+                        <h3>Workshop de Hortas Urbanas</h3>
+                        <p class="event-date">25 de Setembro de 2025 | Centro Comunitário</p>
+                        <p>Aprenda a cultivar seus próprios alimentos, mesmo em pequenos espaços na cidade.</p>
+                        <a href="#" class="btn btn-secondary">Saiba Mais</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section id="contato" class="content-section contact-section">
+            <div class="container">
+                <h2>Vamos Conectar!</h2>
+                <p class="section-description">Tem alguma sugestão, parceria em mente ou quer saber mais sobre como fortalecer essa conexão? Envie sua mensagem!</p>
+                <form class="contact-form" id="contactForm">
                     <div class="form-group">
                         <label for="name">Nome:</label>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name" required placeholder="Seu nome completo">
                     </div>
                     <div class="form-group">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" required placeholder="seu.email@exemplo.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Assunto:</label>
+                        <input type="text" id="subject" name="subject" placeholder="Assunto da sua mensagem">
                     </div>
                     <div class="form-group">
                         <label for="message">Mensagem:</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <textarea id="message" name="message" rows="6" required placeholder="Escreva sua mensagem aqui..."></textarea>
                     </div>
-                    <button type="submit" class="btn">Enviar Mensagem</button>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    <p id="formMessage" class="form-message"></p>
                 </form>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="main-footer">
         <div class="container">
-            <p>&copy; 2025 Festejando a Conexão. Todos os direitos reservados.</p>
+            <p>&copy; 2025 Festejando a Conexão Campo e Cidade. Todos os direitos reservados.</p>
             <div class="social-links">
-                <a href="#"><img src="https://via.placeholder.com/30/3cb371/ffffff?text=FB" alt="Facebook"></a>
-                a href="#"><img src="https://via.placeholder.com/30/3cb371/ffffff?text=FB" alt="Instagram"></a>
-                <a href="#"><img src="https://via.placeholder.com/30/3cb371/ffffff?text=TW" alt="Twitter"></a>
+                <a href="#" aria-label="Facebook"><img src="images/icon-facebook.svg" alt="Facebook"></a>
+                <a href="#" aria-label="Instagram"><img src="images/icon-instagram.svg" alt="Instagram"></a>
+                <a href="#" aria-label="Twitter"><img src="images/icon-twitter.svg" alt="Twitter"></a>
             </div>
         </div>
     </footer>
 
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightboxImg">
+        <div id="lightboxCaption" class="lightbox-caption"></div>
+    </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
